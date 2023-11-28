@@ -1,0 +1,40 @@
+1)Jenkins Pipelines &Declarative pipelines&Stages
+
+Pipeline example :
+Here is an example of a Jenkinsfile using Declarative Pipeline syntax — its Scripted syntax equivalent can be accessed by clicking the Toggle Scripted Pipeline link below:
+
+Jenkinsfile (Declarative Pipeline)
+pipeline { 
+    agent any 
+    options {
+        skipStagesAfterUnstable()
+    }
+    stages {
+        stage('Build') { 
+            steps { 
+                sh 'make' 
+            }
+        }
+        stage('Test'){
+            steps {
+                sh 'make check'
+                junit 'reports/**/*.xml' 
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'make publish' 
+            }
+        }
+    }
+}
+Toggle Scripted Pipeline (Advanced)
+
+1)pipeline is Declarative Pipeline-specific syntax that defines a "block" containing all content and instructions for executing the entire Pipeline.
+2)agent is Declarative Pipeline-specific syntax that instructs Jenkins to allocate an executor (on a node) and workspace for the entire Pipeline.
+3)stage is a syntax block that describes a stage of this Pipeline. Read more about stage blocks in Declarative Pipeline syntax on the Pipeline syntax page. 
+As mentioned above, stage blocks are optional in Scripted Pipeline syntax.
+4)steps is Declarative Pipeline-specific syntax that describes the steps to be run in this stage.
+5)sh is a Pipeline step (provided by the Pipeline: Nodes and Processes plugin) that executes the given shell command.
+6)junit is another Pipeline step (provided by the JUnit plugin) for aggregating test reports.
+7)sh is a Pipeline step (provided by the Pipeline: Nodes and Processes plugin) that executes the given shell command.
