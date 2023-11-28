@@ -1,0 +1,42 @@
+1)Components Of Kubernetes✔
+Ans)𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀 𝗖𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀: Pod, Ingress, Service, ConfigMap, Secrets, Volumes
+
+𝗣𝗼𝗱𝘀: The basic unit of deployment, comprising one or more containers that work together.
+
+𝗜𝗻𝗴𝗿𝗲𝘀𝘀: Manages external access to the services in a Kubernetes cluster.
+
+𝗦𝗲𝗿𝘃𝗶𝗰𝗲: Acts as an abstraction layer to expose pods, ensuring seamless communication.
+
+𝗖𝗼𝗻𝗳𝗶𝗴𝗠𝗮𝗽: A way to store configuration information in key-value pairs.
+
+𝗦𝗲𝗰𝗿𝗲𝘁𝘀: Securely manage sensitive information like passwords or API keys.
+
+𝗩𝗼𝗹𝘂𝗺𝗲𝘀: Enables data persistence, allowing containers to share and store data.
+
+🏗️ 𝗞𝘂𝗯𝗲𝗿𝗻𝗲𝘁𝗲𝘀 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲: 𝗠𝗮𝘀𝘁𝗲𝗿 𝗡𝗼𝗱𝗲 𝘃𝘀. 𝗪𝗼𝗿𝗸𝗲𝗿 𝗡𝗼𝗱𝗲
+
+𝗠𝗮𝘀𝘁𝗲𝗿 𝗡𝗼𝗱𝗲:
+𝗔𝗣𝗜 𝗦𝗲𝗿𝘃𝗲𝗿: Serves the Kubernetes API and is the entry point for all REST commands.
+𝗦𝗰𝗵𝗲𝗱𝘂𝗹𝗲𝗿: Assigns work (pods) to nodes based on resource availability and constraints.
+𝗖𝗼𝗻𝘁𝗿𝗼𝗹𝗹𝗲𝗿 𝗠𝗮𝗻𝗮𝗴𝗲𝗿: Maintains the desired state of the system via controllers.
+𝗲𝘁𝗰𝗱: Consistent and highly-available key-value store for all cluster data.
+
+𝗪𝗼𝗿𝗸𝗲𝗿 𝗡𝗼𝗱𝗲:
+𝗞𝘂𝗯𝗲𝗹𝗲𝘁: Ensures that containers are running in a Pod.
+𝗞𝘂𝗯𝗲 𝗣𝗿𝗼𝘅𝘆: Maintains network rules on nodes and performs simple TCP/UDP stream forwarding.
+𝗖𝗼𝗻𝘁𝗮𝗶𝗻𝗲𝗿 𝗥𝘂𝗻𝘁𝗶𝗺𝗲: Software responsible for running containers.
+
+
+
+
+
+
+
+2)Kubernetes Architecture?
+
+
+
+
+3)
+
+
