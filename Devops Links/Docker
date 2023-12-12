@@ -1,0 +1,58 @@
+
+DOCKER IMAGES:
+
+Commands:
+  build       Build an image from a Dockerfile
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Display detailed information on one or more images
+  load        Load an image from a tar archive or STDIN
+  ls          List images
+  prune       Remove unused images
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  rm          Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+docker images _ this command is used for how many images are there in docker file..
+docker ps     - this command used for how many contaniers running inside image..
+docker info   - docker info used for to check current configuration.Hoa many containers running and how many images are there..  ###  Docker Root Dir: /var/lib/docker (where docker data is stored physically.)
+
+### Creating Docker images Step by step..
+
+docker run ubantu - this command use for crate an image and if it is not find locally it will start pulling..
+docker images - check wheather ubantu image created or not??
+docker ps    - docker ps user for how many conatiner running inside iamage
+docker ps -a - used for how many contanier are running and how many stopped container are there in image.
+
+#### how to intract with containers
+
+docker run -i -t ubuntu -->        this command use for how to go inside the container using docker image
+hostname           --> using for which container is latest one..
+docker run -i -t -d ubuntu    --> using this command to run the comtanier.  and this command will show the entire container id.. (this will run latest conatiner id of docker image)
+docker exec -ti (docker exec -ti 5a727e8 bash) bash  -- if you want to go inside the perticular container .. (5a727e8 is container id)
+docker start (docker start 4ffd0a00bcc5) --> to start the container  ## here 4ffd0a00bcc5 is the container id
+docker stop (docker stop 4ffd0a00bcc5)--> to stop the docker container
+docker kill (docker kill 4ffd00bc5) --> to kill the conatiner ..
+docker rm (docker rm 4ffd0a00bcc5) --> Note: this command will work only for stopped containers.. if the container is running actively this command won't work.
+docker rm -f (docker rm -f  4ffd0a00bcc5) --> Note: Don't use this command .this command will forcefully romove eaither it is running container also.
+docker ps -aq --> using this command you will get all the conainers id's
+docker stop $(docker ps -aq) --> this command is used for to stop the all the running containers
+docker rm $(docker ps -aq)  --> this command used for to remove all the contaniners..
+
+
+
