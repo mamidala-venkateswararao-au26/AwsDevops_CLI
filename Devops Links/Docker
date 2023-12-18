@@ -56,3 +56,39 @@ docker rm $(docker ps -aq)  --> this command used for to remove all the contanin
 
 
 
+### Committing changes to docker containers..
+Task : using container--> install apache sever on this container --> ubuntu container with apache server.
+
+Step 1: Pull the docker container using the command:
+docker pull ubuntu
+
+Step 2: Run the container using the commands
+docker run –it –d ubuntu
+
+Step 3: Access the container using the command:
+docker exec –it <container-id> bash
+
+Step 4: Install apache2 on this container, using the following commands
+apt-get update
+apt-get install apache2
+
+
+Step 5: Exit the container, and save the container using this command. 
+The saved container will be converted into an image with the name specified is
+docker commit <container-id> <username>/<container-name>
+
+--> dpkg -l (dpkg is debunt package family )   --> this command used for wheather apache packages are installed or not?
+--? dpkg -l |grep apache    --> this command is used for appache is there are not..
+--------------- start and stop the apacher server---------
+service apache2 status   ---> it is showing weather apache running status
+
+next step --> apt install curl
+mkdir newfolder --> creating folder
+cd newfolder   --> go to inside the folder
+echo "this is test file>">>testfile   --> creating test file inside testfile output is this is test file.
+cat testfile   --> this will show the inside the test conetent
+
+
+
+
+
