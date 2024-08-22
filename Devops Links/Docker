@@ -5,9 +5,12 @@ Hypervisers is a software that you can use to run mutipule vartual Michines on a
 
 Docker:
 
-project base;
+ Client -------> Docker Demon-----------> Registry
 
-Netflix(java)     
+Client: Client is nothing but CLI. 
+
+Registroy : WHICH CAN STORE ARTIFACTES..
+
 DOCKER IMAGES:
 
 Commands:
