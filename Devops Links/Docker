@@ -11,6 +11,31 @@ Client: Client is nothing but CLI.
 
 Registroy : WHICH CAN STORE ARTIFACTES..
 
+----------
+Docker File:
+-->Dockerfile is a text document that contains all the commands to build the Docker image on the docker platform..
+
+
+
+FROM:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 DOCKER IMAGES:
 
 Commands:
